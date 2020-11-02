@@ -1,0 +1,180 @@
+JavaScript Intro: 
+    
+    ecmaScript 5, 6, 7:  
+         apier, färdiga metoder, nya syntax 
+    
+JavaScript: dymanik språk
+    webb
+
+
+client/frontend:
+    webbläsare, mobila appar, desktop 
+     spara data i client sidan men inte permanent
+
+Backend/server: 
+    
+    Java, C#, PHP, Python ramverk, ruby,
+    Nodejs:- körs i server miljö/backend miljö
+
+Database: 
+    Sparar alla data permanent. 
+
+client->browser 
+  -->destop appar till Iot , ML, mobila appar 
+
+
+API: 
+Browser/webbläsare har sina egna apier för att programmera mot
+
+Backend har oxå sina egna apier.  
+   
+----------  ----- ---  ---- 
+ Variable/variabel:
+A inte likamed a:  Case sensative.
+
+Vad är programmering? 
+     data/info och vad kan vi göra med dem. 
+
+  
+  variable.  för att lagra data/info in i koden 
+
+  //skapar en variable som ska ha namn info/data:
+
+var är från js. 
+    namn 
+  var namn = "Rakib"
+
+  // deklarerar/declaration
+  var namn 
+   
+   // tilldelar något värde 
+
+   namn = "Rakib"  //intialising 
+
+
+----------------- 9:30
+
+
+ Datastypes/datatyper:
+  
+    olika data typer: 
+       
+        text/string:   " texten måste ha citation" 
+               till ex. name, något text , user input 
+
+        int/heltal: heltal
+        
+        decimaltal/float/decimal: 2.2, 
+
+
+        boolean:  true/false 
+ Array/list:
+   //var betygsLista = [ fysikBetygsGrad, kemiBetygsGrad, webBetygsGrad,historiaBetygsGrad, matteBetygsGrad]
+    lista/array:  [1, "text", true, 2.3]
+Object:
+        object:  key value pair/par : 
+               
+           { key:"value" , key2:"value2"}
+
+Declarion+ initialising:
+        var personUppgift =   { name:"Rakib", profession: "lärare", experience:"4"}
+
+läsa /extract: 
+   //objectname.key
+     personUppgift.name
+
+läs mer: https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
+
+Testa i console: 
+
+"10"+10 
+"1010"
+"10"+String( 10 )
+"1010"
+Number("10") + 10
+20
+"10"* String(10)
+100
+
+
+
+--------- 
+    
+
+   
+
+
+   conditional/vilkorsats: 
+
+    //expression ?? : jämförelse : true/false , 
+
+
+
+    //age>18 , password== matatinPassword   
+if(true/false) {  alla kod som finns initu ska köras om vilkoret är sant }
+
+      
+       == //när vi jämför två värde men inte deras datatyper
+        "50" ==50
+        resultat: true
+
+
+
+       ===  //när vi jämför två värde och deras datatyper
+        "50" === 50
+        resultat: false
+
+-------------
+
+       ! not : !true
+false
+var name="something"
+undefined
+name
+"something"
+!name
+false
+!!name
+true
+!false
+true
+name="rakib"
+"rakib"
+name
+"rakib"
+!name
+false
+
+       !=   //not lika med 
+
+       !==  //not lika med 
+       
+
+-----------
+
+
+
+       <  //mindre än 
+       > //Större än 
+       <= //mindre än och lika med
+       >=  ////Större än  och lika med
+
+-----  11.30  
+
+-------
+       
+       else if { om överstående if inte är sant     }
+
+       else {  om inga överstående vilkoren är sant körs else    }
+
+
+
+
+//uppgifter:
+
+  * Skapa ett program där användare matar in 3 siffor och du visar multiflikation av de tre sifforna
+    (10*2*4 )
+   och 
+   Visa oxå:
+   Subtraction  sista två siffor från första siffran. till ex. första siffran är 10 ,    2,4  (substrakt sista två siffror(2, 4) från första 10 )
+    (10- (2+4))
