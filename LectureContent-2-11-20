@@ -1,10 +1,12 @@
 JavaScript Intro: 
     
-    ecmaScript 5, 6, 7:  
+    ecmaScript 5, 6, 7, 8:  es2020
          apier, färdiga metoder, nya syntax 
     
-JavaScript: dymanik språk
-    webb
+JavaScript: 
+  -dymanik språk webb
+
+  (programmering paradigm: OOP, functional)
 
 
 client/frontend:
@@ -12,7 +14,7 @@ client/frontend:
      spara data i client sidan men inte permanent
 
 Backend/server: 
-    
+    OS, file system
     Java, C#, PHP, Python ramverk, ruby,
     Nodejs:- körs i server miljö/backend miljö
 
@@ -22,21 +24,31 @@ Database:
 client->browser 
   -->destop appar till Iot , ML, mobila appar 
 
+-----
+
+Låg nivå- maskin nära 0,1 
+hög nivå- JavaScript 
+          python 
+
 
 API: 
+document, window api
 Browser/webbläsare har sina egna apier för att programmera mot
 
 Backend har oxå sina egna apier.  
    
 ----------  ----- ---  ---- 
- Variable/variabel:
-A inte likamed a:  Case sensative.
+
+
+Variable/variabel:
+A är inte likamed a:  Case sensative.
+
 
 Vad är programmering? 
      data/info och vad kan vi göra med dem. 
 
   
-  variable.  för att lagra data/info in i koden 
+variable.  för att lagra data/info in i koden 
 
   //skapar en variable som ska ha namn info/data:
 
@@ -59,50 +71,68 @@ var är från js.
   
     olika data typer: 
        
-        text/string:   " texten måste ha citation" 
+        text/string:   "texten måste ha citation" 
                till ex. name, något text , user input 
 
         int/heltal: heltal
         
-        decimaltal/float/decimal: 2.2, 
+        decimaltal/float/decimal: 2.2 , 
 
 
         boolean:  true/false 
+
+        //expression
+
+31 min inspelning: 
  Array/list:
    //var betygsLista = [ fysikBetygsGrad, kemiBetygsGrad, webBetygsGrad,historiaBetygsGrad, matteBetygsGrad]
-    lista/array:  [1, "text", true, 2.3]
+    lista/array:
+    
+    var dummy= [1, "text", true, 2.3]
+     //läsa data från lista . man brukar index nummer [indexnummer]
+
 Object:
         object:  key value pair/par : 
                
            { key:"value" , key2:"value2"}
 
 Declarion+ initialising:
-        var personUppgift =   { name:"Rakib", profession: "lärare", experience:"4"}
+        var personUppgift =   { name:"Rakib", profession: "lärare", experience:4}
 
 läsa /extract: 
    //objectname.key
-     personUppgift.name
+     personUppgift.name  //resultat : Rakib
 
 läs mer: https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
 
 Testa i console: 
 
-"10"+10 
-"1010"
+"10"+ 10 
+"1010"  //string 
 "10"+String( 10 )
 "1010"
 Number("10") + 10
 20
 "10"* String(10)
 100
-
-
-
 --------- 
     
 
    
+if(expression && expression1 || expression3) //true 
+  {
+     alla kod som finns inuti kommer att köras 
+  }
 
+
+else if( expression1) {  körs om else if expression är true 
+och if expression är falsk }
+
+
+else {
+  alla kod som finns inuti kommer att köras om if 
+  statement är falsk
+}
 
    conditional/vilkorsats: 
 
@@ -126,7 +156,7 @@ if(true/false) {  alla kod som finns initu ska köras om vilkoret är sant }
 
 -------------
 
-       ! not : !true
+         !   not : !true
 false
 var name="something"
 undefined
@@ -166,15 +196,105 @@ false
        else if { om överstående if inte är sant     }
 
        else {  om inga överstående vilkoren är sant körs else    }
-
-
+-----
 
 
 //uppgifter:
 
-  * Skapa ett program där användare matar in 3 siffor och du visar multiflikation av de tre sifforna
-    (10*2*4 )
-   och 
-   Visa oxå:
+  * 
+  Skapa ett program där användare matar in 3 siffor och du visar multiflikation av de tre sifforna
+  (10*2*4 )
+    
+    och 
+   
+  Visa oxå:
    Subtraction  sista två siffor från första siffran. till ex. första siffran är 10 ,    2,4  (substrakt sista två siffror(2, 4) från första 10 )
     (10- (2+4))
+
+//fråga user att mata in 2 siffror 
+
+// Vi kommer att visa summan av dem 2 siffrona
+  // användare har matat in 
+
+
+ // fråga användare ?? med prompt() // istället för form/input ska vi använda prompt 
+
+ 
+ //lagra info/data : i var  //string 
+      //convertera till int
+  
+
+/* var number1=  prompt("Mata in en siffra")
+var number2 = prompt("mata in andra siffran")
+
+  //var convertedNumber1=  Number(number1)
+  //var convertedNumber2=  Number(number2)
+ // var summan=  convertedNumber1 + convertedNumber2
+// plus/ addera dem
+
+// tar vi inte emot någon minus siffror 
+
+
+ var summan=  Number(number1) + Number(number2)
+
+
+ alert(summan) 
+ */
+// visa till användare
+
+
+
+//  *********************  //
+// program 2: ta in betygsinfo  från användare och 
+   //lagra in i en lista. 
+/* 
+ var fysikBetygsGrad = prompt("mata in fysiks betyg");
+
+// rad efter rad översätts 
+
+
+// Vi ska inte ta något betyggrad som är mindre än 2 
+
+if(fysikBetygsGrad >=2 ) {
+var betygsLista = [fysikBetygsGrad]
+   //alert(betygsLista) 
+   alert("Grattis " + betygsLista)
+}
+else if(fysikBetygsGrad >=3)  { 
+
+    alert("Bra jobbat")
+}
+else {
+    alert("betyget är för lågt")
+} */
+
+
+
+
+
+ 
+
+    
+
+
+
+
+// varje if statement körs/översätts av maskin 
+// else if körs bara om ovantående vilkoret inte är sant 
+
+/*  else if( false) {
+  
+alert("hej , den här raden kommer att köras om övanstådende vilkoret inte är sant")
+
+}
+ */
+
+ //hur ska vi hämta value från en array
+ 
+ 
+ //nameGivningConvention: 
+
+ //  var infoGradeKemi= 5;
+
+
+

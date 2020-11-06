@@ -1,0 +1,202 @@
+Onsdag:
+
+
+* ni ska visa övningen 
+
+
+*  upprepning
+
+//66 min inspelning : 
+*  expression1 && expression2 and 
+*  expression1 || expression2 or 
+
+
+   mellan 25-65 ska ha en specifik tillägg pensioner
+
+    age> 25 || age < 66
+
+  
+---- testa i konsolen :
+true || true 
+
+true || false
+
+false || true
+
+false || false
+
+
+true && true
+
+false && true
+
+false && false 
+
+--- 
+
+true || false && false 
+
+true || false && false || false  && true
+
+----------
+1.21 min i inspelning: 
+ DOM
+   //2.9 inspelning :
+// Vi ska skapa en formulär  i html 
+// vi ska skapa en input fält 
+// läsa data från input fältet 
+  // event ??  händelse som händer när använder din webb appen
+          // till ex. onSubmit/ submit, onChange/ change, 
+           // onLoad /Load, onClick  / Click 
+           // i html : onChange : börjar med on
+           // AddEventListner : change
+  // function ??    en kode block som kan utföra något task/arbete/uppgift
+        //function kan lyssna på en event och event kan anropa funktionen 
+// Skriver vi ut input data in i div tagg i html 
+// 10.30
+// https://developer.mozilla.org/en-US/docs/Web/Events
+// skapa en function som tar input data och skriver in i div
+ function submitData() {   
+  // det är en form och när vi submit form uppdaterar sidan 
+  // data försvinner
+  var inputData = document.querySelector("#text").value;
+  //console.log(inputData)
+  document.querySelector("div").innerText = inputData;
+  // Vi ska skriva inputData in i div tagg i html
+//console.log("vad som helst")
+ }
+ // när användare trycker på button då vill vi submitData functionen ska anropas 
+    //  arguement 
+           //event, Functionnamn
+ //addEventListner("submit" , submitData)
+ var button = document.querySelector("button")
+  button.addEventListener( "click",  submitData );
+
+  // 11.30 
+
+//vi ska referera till h1 och skriva Rubrik med javascript
+//const och let  istället var  
+
+// function deklaration /skapar man en function 
+  
+/* function skrivaRubrik() {
+  var h1 = document.querySelector(".h1");  
+  //querySelector väljer selector samma sätt som css
+  // classname . framför klassnamn  (".h1")
+  // id   # framför id     ("#h1")
+  // tag  skriver vi bara tagname  ("h1")
+            
+console.log(h1)
+
+ h1.innerText=" Min app "
+ console.log(h1.innerText) 
+   //
+}
+
+// man måste anropa funtionen för att kunna utföra task/joobet
+
+
+// anropning av function 
+    //functionnamn()
+   
+skrivaRubrik() ;
+
+  */
+
+
+
+
+-----   -----  ----  ------ -----  
+
+
+
+* Array/lista 
+
+ :  3.19 inspelning
+
+ var lista = [ 1, 3, 5 , 100, 200 ]
+ index Nummer:0 ,1, 2,  3  ,  4
+
+  lista[3]  //resultat blir 100
+  list[0]  // resultat blir 1
+ 
+
+testa i konsolen:
+var lista = [1, 3, 5 , 100, 200]
+undefined
+lista[0]
+1
+lista[2]
+5
+
+var lista = [1, 3, 5 , 100, 200]
+undefined
+lista.length // visar hur många items som finns in i en lista 
+5
+
+lista.push("nytt värde")
+
+
+
+* object 
+    key:value
+
+var personObject = { name : "some name" , more : "more data", profession : "IT tekniker" }
+
+//var Noreen = {  key:"some data" , profession: "Utvecklare"}
+
+//Noreen.profession = "Utvecklare"
+personObject.name // some name
+
+//lägga till data i object 
+
+   // objectnamn.newKeyName = "new value"
+personObject.profession =  "IT tekniker"
+
+personObject.age= 20
+
+personObject.isEmployeed = true
+
+------- 
+
+
+
+// testa själv : 
+
+
+
+
+app.js : 
+
+// koden börjar 
+var h1 =  document.querySelector("h1")
+ 
+
+ 
+// vi skulle skapa en function som läser input data och skriver in i 
+// en div element. 
+function collectData() {
+ //läser input fält 
+  var inputData = document.querySelector("#text").value;  
+// valde div taggen
+  var div = document.querySelector("div")
+// skriver inputData in i div 
+  div.textContent = inputData;
+}
+
+
+
+const btn=   document.querySelector("button")
+btn.addEventListener("click", collectData)
+ //document.addEventListener("")
+ 
+ //click, submit , change , load
+
+   console.log(inputData)
+//h1.innerText =" hello "
+
+// koden slutar
+// event 
+// function  : function ()  {   //task funktionen gör }
+// event listner : lyssnar på någon event och när event händer anropar den 
+  // en function 
