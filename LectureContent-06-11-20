@@ -13,4 +13,65 @@ for loop:
 
 
 
+
+
 Lista
+
+//Uppgiften 1:  
+// skapa en funktion som kollar upp användarens matat in 
+  //lösenord  och upprepande lösenord är samma
+  // till ex. två input fält , en kommer att ta in lösenord, 
+  //upprepande lösenord
+
+  // om lösenordet inte matchar visar den något fel meddelande
+  // om lösenordet matchar visar den succee // div  / alert()
+  //se till om ni har formulär , eller två input 
+  // om ni har förmulär glöm inte e.preventDefault();
+
+
+ // Uppgift 2: Visa udda tal från listan ,   //minst två stycken lösningsätt 
+
+
+
+
+
+
+// vi skulle skapa en function som läser input data och skriver in i 
+// en div element. 
+function collectData() {
+  // e.preventDefault();
+   //läser input fält 
+    var inputData = document.querySelector("#text").value;  
+  // valde div taggen
+    var div = document.querySelector("div")
+  // skriver inputData in i div 
+    div.textContent = inputData;
+  }
+  
+
+  
+  const btn=   document.querySelector("button")
+  btn.addEventListener("click", collectData)
+   //document.addEventListener("")
+   
+
+
+var passWord=document.querySelector("#password").value;
+    var passWordCheck=document.querySelector("#passwordCheck").value; 
+    //jämför //  comapre
+ if(passWord==passWordCheck){
+  
+
+  
+   var success = document.querySelector("#success")
+   success.innerText = "Rätt lösenord!"
+   return true
+    //ingenting kommer att läsas efter return 
+
+  //alert("password matches");
+ }else{
+  var warning = document.querySelector("#warning")
+  warning.innerText = "Fel meddelande!"
+
+  return false;
+}

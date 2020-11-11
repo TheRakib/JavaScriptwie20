@@ -1,0 +1,73 @@
+
+
+
+// programmering   // var , function , if, for , lista, object osv...
+   
+   // webbläsare : DOM API:er 
+
+     // lägga till element 
+     //ta bort en element från index.html 
+
+    // server
+    //database
+    //network 
+    //mobile
+
+
+DOM:  
+
+Läsa data/element/tagg från DOM:
+document.querySelector("#h1")  
+         //för att kunna läsa data från html fil
+          // js fil måste vara inkopplat 
+          // vi kan tilldela detta värdet i en var 
+          //Glöm ej det måste finnas de element som du väljer 
+          
+          //returnerar en element
+
+  ex.   var h1 = document.querySelector("#h1")  
+
+Lägga till text/siffra/innehåll in i Element: 
+
+             element.textContent = " lägga till value" 
+             element.innerHTML =  "  "
+
+      ex. h1.textContent = " Hej från js  "
+
+
+
+**** Hur kan man lägga till element in i DOM/HTML fil: 
+     
+     * Skapa element med createElement()
+     * Lägg till data/text in i elementet  //vi kan lägga till ytt.. attributer 
+     * Pusha den in i någon befientlig element
+     
+   
+   document.createElement("tagg namn") //skapar element 
+
+
+ex. var p = document.createElement("p") // skapar p element 
+  
+  
+       
+
+// lägg till data/text/html in i element
+      p.textContent= "hello från P"
+     // textContent
+
+
+// DOM/html måste veta var vill du lägga till elementet 
+//pusha element in i en befientlig element
+ ex.  
+      var body = document.querySelector("body");
+      body.appendChild(p)
+
+
+
+Övning:
+// img , h1, div , li  
+
+
+
+//list and Embedded list 
+//Embedded object 

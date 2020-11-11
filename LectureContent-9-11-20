@@ -1,0 +1,171 @@
+
+algorithmer: 
+    
+
+
+* Upprepning: 
+for loop: //iteration 
+for(start; villkor; ökning/minskning)
+{
+    Loopa igenom en lista från sist till först 
+    all kod som finns inuti kommer att köras 
+}
+
+for( var i =10;  i>0; i-=5) 
+{ 
+ console.log(i)
+
+}
+
+//i < 5  
+     //högsta indexnummer till en array som har 5 items är 4  
+           // check error 
+           // Loopa igenom en lista: 
+
+
+
+var lista = [1, 2, 4, 6, 8] 
+             0, 1, 2, 3, 4,
+for(var i = 0; i<=lista.length; i++  )
+  {
+      //lista[0]
+      //lista[4]
+   console.log(lista[i]) 
+    //lista[0]
+    //lista[1]
+    //lista[2]
+    //lista[3]
+    //lista[4]
+
+    // sista value????
+
+
+
+    // finns inte lista[5]  // fel 
+
+  }
+
+
+  //  lista.length -1  
+  // visar högsta / sista index nummer från lista
+
+
+
+
+  
+// embebbed lista , object 
+
+* Function 
+   
+       //a och b parameter /temporärt var
+function addNumbers(a, b){
+   
+    //skapar logik 
+   //skapar output 
+      console.log(a+b)
+     // return a + b
+
+   } 
+
+
+// Login(email, password) {  
+     email finns ,
+     och kolla om password matchar med email,
+     logga in användare   
+     return true;
+  }
+
+
+  var isLoggedIn = login(email, password)
+
+  if(isLoggedIn) console.log("profil")
+
+var summan =  addNumbers(20, 30); // 50
+
+var summan2 = addNumbers(50, 100) // 150
+
+//Om man inte ger någon arguement
+addNumbers() //undefined 
+
+
+function countSalary(fastLön, rörligLön) {
+  
+  var slutLön = fastLön + rörligLön
+  console.log(slutLön) //
+
+   return slutLön
+
+}
+
+var rakibsLon = countSalary(2, 3);
+
+var sebbe = countSalary(3,4);
+
+console.log(rakibsLon + sebbe)
+
+//den som anropar funktionen 
+
+
+* Function parameter, arguement
+function visaInConsole(v)
+{   //kodbase
+    console.log(v)
+    //Number()
+}
+
+for()  { kodbase}
+if()  {  
+    
+    kod rader  
+    //flera rader av kod
+
+ }
+
+// när vi anropar en funktion matar vi in data /arguement
+
+
+
+
+
+
+
+
+* JavaScript function in bakgrund
+* Rad efter rad läsning/tolkning av kod 
+
+functioner byggs/skapas först innan filen börjar 
+                           läsas av maskin 
+
+
+
+2:07
+
+*  Funtion expression 
+
+ var addNumbers = function addNumbers(a, b){
+   
+    //skapar logik 
+   //skapar output 
+      console.log(a+b)
+   return a+b
+   } 
+ var totalt =   addNumbers(20, 40)
+
+*  arrow function 
+    
+
+// arrow struktur
+var addNumbers =  (a, b) => 
+{
+   console.log(a+b)
+
+  return a +b 
+
+}
+    // 11.25
+
+3:02 
+
+
+
+
