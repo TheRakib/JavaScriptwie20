@@ -49,3 +49,16 @@ console.log(personList[1].name)
 console.log(personList[0].countEX1()) //funktionen 
 
 console.log(personList[1].countEX2()) //funktionen 
+
+
+
+//**   split funktion         **/
+
+var newsData= "Något news data";
+
+//konvertera en list 
+console.log(newsData.split("")) // [N, å, g, o, ...... ]
+
+console.log(newsData.split(" ")) //["Något", "news", "data"]
+
+//11.30

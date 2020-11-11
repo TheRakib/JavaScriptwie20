@@ -64,8 +64,10 @@ ex. var p = document.createElement("p") // skapar p element
 
 
 
+
 Övning:
-// img , h1, div , li  
+// 1. Lägga till img , h1, div , li  in index html filen
+// 2. räkna ut lasses erfarenhet 
 
 
 
