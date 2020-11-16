@@ -12,7 +12,7 @@ var addElement = function ()  {
 
   //console.log(p)
   //sätta attributer
-  p.setAttribute("id" , "p1")
+  p.setAttribute("id" , "p1") //name , value
 
   //sätta attributer
   p.setAttribute("class" , "paragraf")

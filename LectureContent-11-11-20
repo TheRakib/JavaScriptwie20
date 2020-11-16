@@ -5,7 +5,7 @@
    
    // webbläsare : DOM API:er 
 
-     // lägga till element 
+     //lägga till element 
      //ta bort en element från index.html 
 
     // server
@@ -18,12 +18,11 @@ DOM:
 
 Läsa data/element/tagg från DOM:
 document.querySelector("#h1")  
-         //för att kunna läsa data från html fil
+         // för att kunna läsa data från html fil
           // js fil måste vara inkopplat 
-          // vi kan tilldela detta värdet i en var 
-          //Glöm ej det måste finnas de element som du väljer 
-          
-          //returnerar en element
+          //  vi kan tilldela detta värdet i en var 
+          // Glöm ej det måste finnas de elementen som du väljer from html filen
+          // returnerar en element  till ex. <h1>  </h1>
 
   ex.   var h1 = document.querySelector("#h1")  
 
@@ -43,31 +42,54 @@ Lägga till text/siffra/innehåll in i Element:
      * Pusha den in i någon befientlig element
      
    
-   document.createElement("tagg namn") //skapar element 
+   //
+   document.createElement("p") //skapar element 
 
 
 ex. var p = document.createElement("p") // skapar p element 
   
   
-       
+   
+     // resultat: <p>   </p> 
 
 // lägg till data/text/html in i element
-      p.textContent= "hello från P"
+      p.textContent= " hello från P"
      // textContent
+     //resultat:  <p> hello från p  </p> 
+
+
 
 
 // DOM/html måste veta var vill du lägga till elementet 
 //pusha element in i en befientlig element
  ex.  
+      
       var body = document.querySelector("body");
+
       body.appendChild(p)
 
+      // <p> hello från p  </p> 
 
+
+
+// Vi kan lägga till attributer på :  new created element: 
+
+   : setAttribute()
+
+//console.log(p)
+  //sätta attributer
+  p.setAttribute("id" , "p1") //name , value
+
+  //sätta attributer
+  p.setAttribute("class" , "paragraf")
+  //lägger till värde till p
+  //console.log(p)
 
 
 Övning:
 // 1. Lägga till img , h1, div , li  in index html filen
-// 2. räkna ut lasses erfarenhet 
+// 2. räkna ut hur länge lasse har jobbat på medieinstitutet 
+  
 
 
 

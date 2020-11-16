@@ -1,0 +1,64 @@
+
+* Går för fort  
+* Struktur: 
+listorna: 
+   datatyper: länk ,
+   agenga/termer: länkar till resurser  
+
+* Docs:  
+          * Läsa docs
+          * Computational thinking:
+               lösa små problem med programmering,
+          * Read and understand code 
+          * Write code 
+        
+       bättre lösning. 
+      
+* Visa:  självStudie:
+   Lista: Js termer man ska kunna:
+
+Variabel
+Datatyper  
+Logiska uttryck 
+Villkorssats 
+Loop/upprepning 
+For loop
+While
+For each 
+for of 
+for in
+Map
+global objekt 
+Function 
+Array functions 
+Function Expression 
+IIFE
+Array
+Object 
+type conversion 
+DOM
+ES6/ES7
+this
+null vs undefined
+nested funktion
+Klona ett objekt 
+merging ett objekt 
+klona ett array
+merging ett array
+Arbeta med array  : Add, remove, searching, sorting, extract, items,loopa /iterating, joining, transform an array into a string, arrays of object
+Arbeta med Objekt: Add, remove, loopa/iterera/iterating
+bind, call , apply
+Async/await 
+promises, callbacks
+JSON
+JSON parse
+
+Extra:
+modules 
+Event loop
+Hoisting
+Closure 
+
+
+
+Implementering: ex. code inlämning2, grupplämning 
