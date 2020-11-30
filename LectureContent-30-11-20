@@ -1,0 +1,96 @@
+Vi ska gå genom: 
+                     * const , let 
+                     * Global vs functional scope/lexical scope 
+
+
+const x = 100; 
+const x = "kommer inte gå"
+
+functional Scope() {     
+ const x= 100; 
+}
+                  
+* IIFEs : Immediately invoked function expressions 
+
+    skapar en function sen anropar funktionen. 
+
+
+    (function namn() {
+         console.log("hello klassen")
+     }) ()  
+
+        
+
+
+* Arbeta med API:er  del 1
+    
+     unsplash api : bilder 
+      lista dem i er webbsidan  
+
+API : application programming interface 
+    : api endpoints: som har data: en lista av data eller en singel data 
+
+document //browser api 
+
+
+https://jsonplaceholder.typicode.com/todos 
+// api endpoints /url  : här ska finnas lista 
+ //av data eller enskild data
+
+
+sync: rad efter rad 
+  väntar på varje rad 
+     kod rad 1; //
+     kod rad 2; //lång tid att exekvera 
+     kod rad 3; 
+     
+
+async : väntar man på nån response 
+
+väntar inte på async rad
+
+     kod rad 1;
+     kod rad 2; //lång tid att exekvera   //async  
+     kod rad 3; 
+     kod rad 4; 
+   
+
+
+Föreläsning 9, 10. 
+git conflikt , git branch, / mobbprogrammering
+
+    // promise , callback , async await 
+
+ 
+ 
+
+      
+
+
+
+
+
+
+Gruppinlämningen: 
+
+          
+var namn; //var deklaration 
+namn = 10 ; // initializing / tilldelning 
+var namn= 10 ; // var deklaration och initializing/tilldelning 
+
+
+
+const namn = "rakib" ; 
+  //kan inte deklarera variabel med samma namn eller tilldela nytt värde till variabel 
+
+const namn  : error 
+namn = "rakib" : error
+
+
+let namn = "rakib";
+  
+      // kan inte deklarera variabel med samma namn men det går att tilldela 
+        // nytt värde 
+
+--------------------------
+ 
