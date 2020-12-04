@@ -132,6 +132,12 @@ git remote add origin https://exampel.git  //varifrån ska man dra ner/ add remo
 git pull origin master  // dra ner senaste kopia av koden från master branch
 
 
+Error som kan uppkomma:  origin already exist 
+git remote -v // vilken repo man jobbar i 
+
+git remote remove origin   // för att ta bort befietlig repo
+git remote add origin https://exampel.git  // lägga till rätt origin 
+
 ********************* Errors som kan uppkomma *****************
     ( errors   .............)
 

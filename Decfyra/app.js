@@ -108,5 +108,5 @@ lista.forEach( function(e) {console.log(e)}  )
 //alternative
 lista.forEach( (e)=> {  console.log(e)  }  )
 
-lista.map(  f=> console.log(f))
+lista.map(  f=> console.log(f)  )
 
