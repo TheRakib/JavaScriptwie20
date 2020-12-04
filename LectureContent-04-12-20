@@ -105,6 +105,7 @@ projektmappen
           -app.js 
           -scss 
              -main.scss 
+         - readme.txt 
 
 
   
@@ -133,6 +134,19 @@ git pull origin master  // dra ner senaste kopia av koden från master branch
 
 ********************* Errors som kan uppkomma *****************
     ( errors   .............)
+
+Error 1: 
+    git pull .... du måste ge en branch namn 
+
+
+    git pull origin master 
+
+Error 2:
+    git pull .... oreleterat ändringar .. unrelated history 
+
+  git pull origin master  --allow-unrelated-histories 
+
+
 ***************************************************************
 
 projektmappen  
@@ -161,15 +175,14 @@ master :
 Rakib: 
 dra ner senaste kopia av vårt projekt: 
 
-git pull origin master  :   framför filen:   A // added filer C// konflikt  M// ändrat D // delete 
+git pull origin master  :  framför filen:   A // added filer C// konflikt  M// ändrat D // delete 
 
 master : 
  projektmappen  
           - index.html  (C) <body> 
-          accept current changes | accept incoming changes | accept both changes 
-        ===================================================================
-                          <h1><h1> <p> </p> <img>  </body>
-
+ accept current changes | accept incoming changes | accept both changes  |  compare changes 
+ ========================================================================================
+                          <h1><h1>  <h2> </h2>  <p> </p> <img>  </body>
 
           -app.js 
           -scss 
@@ -177,7 +190,12 @@ master :
              -global.scss (A)
 
 
+Spara i git  -> pull och (alltid spara i git igen ) push. 
 
+
+
+
+// rast: 10.30
 
 
 
