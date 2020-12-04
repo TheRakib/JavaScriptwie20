@@ -1,0 +1,201 @@
+
+** Git och github: 
+
+
+project feature1 , feature2 
+
+Scenerio 1: 
+  
+Rakib :  
+Skapar projektmappen            -spara i localt  -spara den i cloud/online   tillgång till adam
+                -index.html: <body> </body>                        projektmappen
+                -app.js 
+                -scss 
+                  -main.scss     
+
+       
+        
+         dra ner mappen med nya ändringar. 
+
+
+Adam   
+dra ner projektmappen        -spara i localt     -spara i cloud/online projektmapp (Rakibs projektmapp)
+          projektmappen
+          -index.html <body> <h1><h1> </body>
+          -app.js 
+          -scss 
+             -main.scss 
+
+ 
+ 
+**********  -spara i localt  **************** 
+*********************************************
+vem har ändrat kodbasen?
+när ? 
+Vad har personen har ändrat ?
+kommentar
+gå tillbaka till en specifik ändring. ctrl+z cmd+z 
+-> git 
+
+
+** git init  //initilera git  
+
+  sparar allt i localt: 
+
+  git add .   //vad vill du spara 
+  git commit -m "sparar du med git commit och meddelande"
+
+    spara git : 
+
+gren/branch:           
+
+master branch  (huvud branch)  slut versionen av ditt projekt  / slutarbetet ska sparas                     
+  projektmappen  
+          -index.html <body> <h1><h1> </body>
+          -app.js 
+          -scss 
+             -main.scss 
+
+
+main branch             
+  projektmappen
+          -index.html <body> <h1><h1> <p><p> </body>
+         
+
+
+vadsomhelstNamnbranch             
+  projektmappen
+          
+          -app.js 
+             -console.log("hej")
+
+
+       
+merge : alla branch.  : git merge vadsomhelstNamnbranch
+
+
+
+
+**********  -spara i cloud   **************** 
+*********************************************
+
+För att koppla local git med remote git/cloud:
+
+
+git remote add origin https://exampel.git 
+git push origin vadsomhelstNamnbranch
+
+
+git push origin main 
+
+git push origin master 
+
+
+
+
+projektmappen + https://exampel.git 
+
+
+https://exampel.git: origin remote ställe : 
+
+master branch:  (huvud branch)  slut versionen av ditt projekt  / slutarbetet ska sparas  
+
+projektmappen  
+          -index.html <body> <h1><h1> </body>
+          -app.js 
+          -scss 
+             -main.scss 
+
+
+  
+VadsomhelstNamnbranch             
+  projektmappen
+          
+          -app.js 
+             -console.log("hej")
+
+main branch             
+  projektmappen
+          -index.html <body> <h1><h1> <p><p> </body>
+         
+
+ge tillgång till Adam:
+
+  projekt repo -> settings -> manage access -> bjuder man in 
+
+
+Dra ner hela projektmapp till sin local mapp: 
+
+git remote add origin https://exampel.git  //varifrån ska man dra ner/ add remote repo 
+
+git pull origin master  // dra ner senaste kopia av koden från master branch
+
+
+********************* Errors som kan uppkomma *****************
+    ( errors   .............)
+***************************************************************
+
+projektmappen  
+          -index.html <body> <h1><h1> <p> </p> <img>  </body>
+          -app.js 
+          -scss 
+             -main.scss 
+
+git add . 
+git commit -m "sparas i adams local repo"
+
+
+git push origin master  //pusha hans ändragar till molnet/remote repo .
+
+
+Då i molnet: 
+master : 
+ projektmappen  
+          -index.html <body> <h1><h1> <p> </p> <img>  </body>
+          -app.js 
+          -scss 
+             -main.scss
+             -global.scss
+
+
+Rakib: 
+dra ner senaste kopia av vårt projekt: 
+
+git pull origin master  :   framför filen:   A // added filer C// konflikt  M// ändrat D // delete 
+
+master : 
+ projektmappen  
+          - index.html  (C) <body> 
+          accept current changes | accept incoming changes | accept both changes 
+        ===================================================================
+                          <h1><h1> <p> </p> <img>  </body>
+
+
+          -app.js 
+          -scss 
+             -main.scss
+             -global.scss (A)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** Async await  -> promise , callback 
+
+Läs mer: https://docs.google.com/document/d/1TNJ1lxyuIZCIDAurLDFWpqoaRzl1aVGcCCrOOSqD-IY/edit?usp=sharing
+
+Läs mer:
+Avancerad: https://docs.google.com/document/d/1lvGAq5mdr6yAM7pJ20Z0Ggad7tEd7v2Z_sddQU_VoTg/edit?usp=sharing
+
+
