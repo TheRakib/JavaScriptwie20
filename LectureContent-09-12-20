@@ -1,0 +1,66 @@
+
+Localstorage: 
+       * lagra data i klient/webläsaren
+
+server: database : lagras data permanent. 
+
+
+Hur den fungerar? 
+
+     *hur man sätter values:objekt/list i en Localstorage
+    
+    var namn = "Rakib"
+     localstorage.setItem("valueNamn", "rakib")
+
+
+     *Hur man läser data från Localstorage
+    
+   var returnedFromLocalstorage =  localstorage.getItem("valueNamn")
+   console.log(returnedFromLocalstorage)
+
+
+//JSON och js objekt: 
+
+// JSON passera data mellan olika språk/system 
+
+   kundvagn: lagrade i js objekt.   
+           //JSON :JavaScript object notation 
+               "{ "value" :"rakib"}"
+               
+
+               *JSON.stringify() js objekt till JSON
+               *JSON.parse() JSON objekt till js objekt. 
+
+
+
+    php backend ->objektet js språk 
+
+
+
+
+JSON.stringify({namn:"Cake", pris:200}) //konvertera js objekt till json objekt
+"{"namn":"Cake","pris":200}"
+localStorage.setItem("cartItem", JSON.stringify({namn:"Cake", pris:200}) ) 
+undefined
+var item= localStorage.getItem("cartItem")
+undefined
+item
+"{"namn":"Cake","pris":200}"
+JSON.parse(item)
+{namn: "Cake", pris: 200}
+
+
+
+9:30: 
+Hur kan vi implementera den i projektet? 
+
+
+
+
+
+
+
+Hur kan vi kopiera en lista ? till ex: lista1= [1, 2, 4] och lista2 = [5,8,9]
+
+
+*** Hur ska man ta bort duplicate values från en list? 
