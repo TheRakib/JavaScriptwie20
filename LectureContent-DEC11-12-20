@@ -1,0 +1,35 @@
+
+* Upprepning: localStorage
+
+*** Skapa en produkterna innan med hjälp av localStorage
+*** Skapa cart med localStorage
+*** state/data  :localStorage som data källa och state/data hantering använd localStorage
+
+*** Ni skapar nån produkt , 
+                spara den i localStorage - lista av objekten/produkter. 
+        
+        
+    läsa localStorage för att kunna visa produkterna: för varje produkt i listan skapar man en
+      card. olika namn , price , src , add to card osv. 
+    **** ha en produktID för varje produkt -> för att kunna redigera eller radera produkten 
+           
+           * Varje gång användare trycker på add to card -> spara namn och pris i localStorage
+               kundvagn item.  Ha lite validering om användare redan har produkten tillagd. 
+           * Läsa kundvagnList och visa i kundvagnen.
+           * Ta bort produkterna från kundvagn, + - 
+        
+*** kundvagn: Skapa en localStorage item för kundvagn 
+
+
+
+
+* API :
+    api endpoints: en eller list av data 
+
+
+     response =  fetch(url)
+
+* map , foreach 
+* Bilder från unsplash api . fetch metoden 
+
+https://api.unsplash.com/photos/?client_id=iQPAF8Dq7rQFnTgJhOH_cd0D7xUMZqM6pHi4VHSloyk

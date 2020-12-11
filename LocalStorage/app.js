@@ -21,28 +21,37 @@ function addToLocalStorage(){
    const name= document.querySelector("#input1").value;
    const price= document.querySelector("#input2").value;
 
-   const divData = document.querySelector(".test").innerText;
+  // const divData = document.querySelector(".test").innerText;
 
-   localStorage.setItem("DivData" , divData)
+  // localStorage.setItem("DivData" , divData)
+
    // input1 och input2 ska lagras i ett objekt
    //Validera om användare har matat in empty value
   product.name = name;
   product.price = price
-  console.log(product) // {name :" ", price:" "}
+  //console.log(product) // {name :" ", price:" "}
    //objektet ska pushas i item array 
   
   item.push(product)
-  console.log("item array ", item)
+ // console.log("item array ", item)
   //item array ska lagras i localstorage 
 
   // vi behöver skriva lite logik som gör att setItem kan också
  //lagra nya value /append nya value
  //när det finns data in i localstorage ska vi lägga till data  
 
+
+// vi skulle spara data i localStorage 
+
+
+
+// om det redan finns produkter i localstorage skulle vi lägga till item 
+// i localstorage.
+
+
  //localstorage har befietligt value
  const localData = localStorage.getItem("productList"); 
-
-
+ //konverterade vi till js objekt 
  const existingData = JSON.parse(localData)
 
    // hur vi kan adda två array 
@@ -55,28 +64,7 @@ function addToLocalStorage(){
  
 }
 
-const dataFromLocal= localStorage.getItem("productList")
 
-const parsedData = JSON.parse( dataFromLocal)
-console.log("Från utanför funktionen " ,parsedData )
-
-
-parsedData.map(  product => {
-   //div= document.querySelector(".data")
-   const li = document.createElement("li")
-    li.innerText = product.name
-    const div = document.querySelector(".data")
-    div.append(li);
-    console.log(product.name) 
-    console.log(product.price)}    
-    
-    )
-
-
-
-
-const divData = localStorage.getItem("DivData");
-console.log(divData)
 
 
 //localStorage.clear() 
