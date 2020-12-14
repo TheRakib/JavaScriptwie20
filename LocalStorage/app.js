@@ -67,6 +67,27 @@ function addToLocalStorage(){
 
 
 
+function addSomething() {
+    localStorage.setItem("someData", " lite info ")
+
+    location.reload();
+}
+
+//onreload()
+function reload() {
+    const data2 = localStorage.getItem("someData")
+console.log(data2)
+
+}
+
+const btn2 = document.querySelector(".btn")
+
+
+btn2.addEventListener("click", addSomething)
+//nån event : click , onload , onsubmit osv. 
+
+
+
 //localStorage.clear() 
 // läser data input fälten 
 // skapa ett objekt utifån input data 

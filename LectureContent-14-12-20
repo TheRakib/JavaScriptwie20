@@ -1,0 +1,132 @@
+ Upprepning : API:
+
+
+      client -öppnar en koppling 
+      client - skickar in request 
+
+      server - svarar med data eller error 
+      client - stänger kopplingen 
+
+
+   async await . // 
+
+   JSON. 
+    
+
+
+
+
+
+ ** get, update , post , delete 
+
+lågnivå : maskin nära
+
+högnivå: människor nära
+
+// XMLHTTP request : https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
+ 
+ // fetch  //
+ 
+ // axios 
+
+
+
+//10:00
+ 
+* Object keys iteration : https://www.w3schools.com/jsref/jsref_keys.asp
+* Object values och keys iteration: https://attacomsian.com/blog/javascript-iterate-objects
+
+ const info=  { 
+    name: "Rakib", 
+    yrke: "lärare"
+  }   
+
+//iterable converta den till array/lista. 
+       
+konvertera bar keys i en lista. 
+
+Object.keys()
+
+```
+const kundvagnProdukt = {
+  name: 'somestring',
+  price: 42,
+  stock: true
+};
+   //  Read, update och delete 
+
+console.log(Object.keys(kundvagnProdukt));
+const items =Object.keys(kundvagnProdukt)
+// expected output: Array ["a", "b", "c"]
+items.map( keys => console.log(kundvagnProdukt[keys]) )
+
+```
+
+
+Object.values()
+
+```
+const object1 = {
+  a: 'somestring',
+  price: 42,
+  c: false
+};
+console.log(Object.values(object1));
+// expected output: Array ["somestring", 42, false]
+
+const items = Object.values(object1)
+items.map( e=> console.log(e) )
+
+```
+
+
+
+Object.entries()
+
+```
+const object1 = {
+  a: 'somestring',
+  b: 42
+};
+console.log(Object.entries(object1))
+// for of : loop 
+for (const [k, v] of Object.entries(object1)) {
+    console.log(k , v);
+}
+// foreach , for , map  
+//for of
+// expected output:
+// "a: somestring"
+// "b: 42"
+// order is not guaranteed
+```
+
+
+values och keys kan konverteras till items. 
+
+
+Objects: read values with array brackets 
+const objekt= { name:"Rakib" , id:1}
+undefined
+objekt.name
+"Rakib"
+objekt["name"]
+"Rakib"
+objekt[name]
+undefined
+objekt["name"]
+"Rakib"
+objekt["id"]
+1
+
+
+---------  ----
+11.00: 
+
+
+//  python vs js 
+
+
+handledning: mellan 11.10-16.30
+//code ninja, devEd
+
