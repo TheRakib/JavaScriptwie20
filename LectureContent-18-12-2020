@@ -1,0 +1,160 @@
+förberedning för test: 
+
+ let och const : 
+
+ const namn = "something"
+ // error : namn = "something else"
+ variabel deklaration 
+ variabel intilering/tilldelning. 
+
+ -- -- -- -- 
+
+ comparasion / uttryck : 
+
+
+=== // kollar upp: data type plus innputvalue
+== // value 
+                        = //?? tilldelar value 
+< , > , ! ,  => , <=  
+
+if( uttryck ) //??
+
+ex. 
+ const admin =      "innputvalue" === "admin"
+undefined
+admin
+false
+const inputValue = "admin"
+undefined
+const isAdmin = inputValue === "admin"
+undefined
+isAdmin
+true
+const lösenord = "123"
+undefined
+const correktPass = "123" === lösenord
+undefined
+"123"===lösenord
+true
+correktPass
+true
+5 == 5
+true
+const r8 = 5==5
+undefined
+r8
+true
+
+for(var i = startvalue; villkor; önking/minskning av startvalue)
+for(var i = 0; i<10; i+=2) { code kommer att köras så länge är villkoret sant }
+
+
+
+functions: 
+
+function doSomething(){
+    
+    console.log(" hello" )
+    //allt kommer 
+
+    isPasswordCorrekt =   "hejhej" === "hejhej"
+    return  (
+       isPasswordCorrekt;
+    )
+}
+
+let returnedValue = doSomething()
+
+returnedValue// true
+
+
+//undefined
+function doSomething(){
+    
+    console.log(" hello" )
+    //allt kommer 
+
+    isPasswordCorrekt =   "hejhej" === "hejhej"
+    return (
+    isPasswordCorrekt;
+    )
+    
+}
+
+let returnedValue = doSomething()
+
+returnedValue// undefined
+
+function add(a, b, c) {
+  console.log(a+b+c)
+}
+
+add() // undefined ,fel 
+add(2, 3, 5);//rätta value
+
+
+
+// testa detta oxå
+function add(a = 20, b=30, c=50) {
+  console.log(a+b+c)
+}
+
+add() // Vad kommer resultat blir??   
+add(2, 3, 5);//rätta value
+
+
+
+// array 
+
+//object 
+
+
+var object = {
+
+
+    namn:"Rakib", 
+    password:"hashvalue",
+    isAdmin: function() {
+        console.log(namn)
+    }
+}
+
+var object = {
+
+
+    namn:"Rakib", 
+    password:"hashvalue",
+    isAdmin: function() {
+        console.log(this)
+    }
+}
+
+ex: 
+undefined
+object.isAdmin()
+VM1431:7 {namn: "Rakib", password: "hashvalue", isAdmin: ƒ}isAdmin: ƒ ()namn: "Rakib"password: "hashvalue"__proto__: Object
+undefined
+object
+{namn: "Rakib", password: "hashvalue", isAdmin: ƒ}
+
+const lista= [2, 4, 5, 10]
+
+lista[1] // indexnummer för att kunna visa value  
+
+//10.00 
+
+var list= [{id: 1, name:"someone"} ]
+undefined
+list[0]
+{id: 1, name: "someone"}
+Object.keys(list[0])
+(2) ["id", "name"]0: "id"1: "name"length: 2__proto__: Array(0)
+Object.keys(list[0])[1]
+"name"
+Object.keys(list[0])[0] 
+"id"
+
+
+
+
+
